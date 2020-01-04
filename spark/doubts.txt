@@ -1,9 +1,8 @@
-1) Not be able to use toDF() in spark because import sqlContext.implicits._ is not working
+Q) Not be able to use toDF() in spark because import sqlContext.implicits._ is not working
 
-Solution :-
-1] Need to get sqlContext as below.
-
+Sol:-
+1) Need to get sqlContext as below.
 val sqlContext = new org.apache.spark.sql.SQLContext(sc)
 import sqlContext.implicits._
 
-2] case class need to be out of method. This is also mentioned in most of the blogs.
+2) case class need to be out of method. This is also mentioned in most of the blogs.
